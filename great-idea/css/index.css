@@ -64,3 +64,150 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+
+/* FONT SET */
+html, body {
+	font-family: 'Rajdhani', sans-serif;
+}
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+}
+h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
+
+/* BODY */
+body {
+	width: 876px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+/* NAV */
+#nav-wrapper {
+	background-color: #eeeeee;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	padding: 25px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+#nav-container {
+	display: flex;
+	justify-content: space-between;
+}
+#nav-container nav {
+	display: flex;
+}
+#nav-container nav a {
+	border-bottom: 1px solid #eeeeee;
+	color: #555555;
+	font-size: 14px;
+	margin: 0 20px;
+	padding: 10px;
+	text-decoration: none;
+	transition:
+		background-color .25s ease-in-out,
+		border-bottom .25s ease-in-out,
+		color .25s ease-in-out;
+}
+#nav-container nav a:first-child {
+	margin-left: 0;
+}
+#nav-container #active-page {
+	border-bottom: 1px solid #bbbbbb;
+	color: #222222;
+}
+#nav-container nav a:hover {
+	background-color: #ffffff;
+	border-bottom: 1px solid #bbbbbb;
+	color: #222222;
+}
+.logo {
+	display: inline-block;
+	margin-left: 90px;
+	vertical-align: middle;
+}
+
+/* HEADER */
+header {
+	border-bottom: 1px solid black;
+	margin-top: 150px;
+	padding-bottom: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#call-to-action-container {
+	text-align: center;
+}
+#call-to-action-container h1 {
+	font-size: 72px;
+}
+#call-to-action-container button {
+	background: white;
+	border: 1px solid black;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 10px;
+	padding: 5px 40px;
+	transition:
+		background .25s ease-in-out,
+		padding .25s ease-in-out;
+}
+#call-to-action-container button:hover {
+	background: #dddddd;
+	padding: 5px 55px; 
+}
+
+/* CONTENT */
+#content-container {
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+#content-container img {
+	width: 100%;
+}
+#content-container section:nth-child(1),
+#content-container section:nth-child(2) {
+	width: 49%;
+}
+#content-container section:nth-child(4),
+#content-container section:nth-child(5),
+#content-container section:nth-child(6) {
+	width: 32%;
+}
+#content-container section {
+	margin: 40px 0;
+}
+#content-container section h2 {
+	text-transform: uppercase;
+}
+
+/* CONTACT */
+#contact-container {
+	margin: 40px 0;
+	width: 100%;
+}
+
+/* FOOTER */
+footer {
+	font-size: 14px;
+	padding-bottom: 80px;
+	text-align: center;
+}
