@@ -49,38 +49,25 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
 
-/* FONT SET */
-/* html, body {
-	font-family: 'Rajdhani', sans-serif;
-}
-h1 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 900;
-}
-h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-} */
-
-/* BODY */
+/* GENERAL USE STYLING */
 body {
 	width: 876px;
 	margin: 0 auto;
@@ -88,8 +75,7 @@ body {
 	flex-flow: column nowrap;
 	align-items: center;
 }
-
-/* NAV */
+/* Site Navigation */
 #nav-wrapper {
 	background-color: #eeeeee;
 	display: flex;
@@ -137,9 +123,16 @@ body {
 	margin-left: 90px;
 	vertical-align: middle;
 }
+/* Footer */
+footer {
+	font-size: 14px;
+	padding-bottom: 80px;
+	text-align: center;
+}
 
-/* HEADER */
-header {
+/* INDEX PAGE STYLING */
+/* Header */
+#index-header {
 	border-bottom: 1px solid black;
 	margin-top: 150px;
 	padding-bottom: 50px;
@@ -148,14 +141,14 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
-#call-to-action-container {
+#index-header div {
 	text-align: center;
 }
-#call-to-action-container h1 {
+#index-header div h1 {
 	font-size: 72px;
 }
-#call-to-action-container button {
-	background: white;
+#index-header div button {
+	background-color: white;
 	border: 1px solid black;
 	color: black;
 	font-family: 'Raleway', sans-serif;
@@ -164,60 +157,50 @@ header {
 	margin-top: 10px;
 	padding: 5px 40px;
 	transition:
-		background .25s ease-in-out,
+		background-color .25s ease-in-out,
 		padding .25s ease-in-out;
 }
-#call-to-action-container button:hover {
-	background: #dddddd;
+#index-header div button:hover {
+	background-color: #dddddd;
 	padding: 5px 55px; 
 }
-
-/* CONTENT */
-#content-container {
+/* Content */
+#index-content {
 	border-bottom: 1px solid black;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	width: 100%;
 }
-#content-container img {
+#index-content img {
 	width: 100%;
 }
-#content-container section:nth-child(1),
-#content-container section:nth-child(2) {
+#index-content section:nth-child(1),
+#index-content section:nth-child(2) {
 	width: 49%;
 }
-#content-container section:nth-child(4),
-#content-container section:nth-child(5),
-#content-container section:nth-child(6) {
+#index-content section:nth-child(4),
+#index-content section:nth-child(5),
+#index-content section:nth-child(6) {
 	width: 32%;
 }
-#content-container section {
+#index-content section {
 	margin: 40px 0;
 }
-#content-container section h2 {
+#index-content section h2 {
 	text-transform: uppercase;
 }
-
-/* CONTACT */
-#contact-container {
+/* Contact */
+#index-contact {
 	margin: 40px 0;
 	width: 100%;
 }
 
-/* FOOTER */
-footer {
-	font-size: 14px;
-	padding-bottom: 80px;
-	text-align: center;
-}
-
-
-
 /* SERVICES PAGE STYLING */
+/* Header */
 #services-header {
 	flex-flow: row wrap;
-	padding: 0;
+	padding-top: 125px;
 }
 #services-header img {
 	width: 100%;
@@ -228,7 +211,7 @@ footer {
 #services-header section h1 {
 	font-size: 32px;
 }
-
+/* Content */
 #services-content {
 	display: flex;
 	justify-content: space-between;
@@ -258,7 +241,7 @@ footer {
 	background: #dddddd;
 	padding: 5px 55px; 
 }
-
+/* Facts */
 #services-facts {
 	margin: 50px 0;
 	display: flex;
