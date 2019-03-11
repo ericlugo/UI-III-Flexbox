@@ -88,6 +88,7 @@ body {
 	top: 0;
 	width: 100%;
 	z-index: 1;
+	box-shadow: 0 0 5px #222222;
 }
 #nav-container {
 	display: flex;
@@ -264,4 +265,80 @@ footer {
 }
 #services-facts img {
 	width: 47%;
+}
+
+/* ABOUT PAGE STYLING */
+/* Header */
+#about-header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 125px 0 50px 0;
+	padding: 1em 1.5em 0 0;
+	width: 100%;
+	background: #bbbbbb url(../img/office-crew.jpg) no-repeat center;
+	background-size: cover;
+	text-align: right;
+}
+#about-header h1 {
+	width: 100%;
+	color: white;
+	text-shadow: 0 0 5px #222222;
+	font-size: 48px;
+	line-height: 1.5em;
+}
+/* Content */
+#about-content {
+	border-bottom: 1px solid black;
+	padding-bottom: 25px;
+	margin-bottom: 50px;
+}
+#about-content h1 {
+	font-size: 36px;
+}
+
+#about-content section {
+	background-color: #eeeeee;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	padding: 25px;
+	margin: 0 0 25px 0;
+}
+#about-content .image-wrapper {
+	width: 33%;
+	border-radius: 50px 0;
+}
+#about-content #devOne {
+	background: #bbbbbb url(../img/devOne.jpg) no-repeat center;
+	background-size: cover;
+}
+#about-content #devTwo {
+	background: #bbbbbb url(../img/devTwo.jpg) no-repeat center;
+	background-size: cover;
+}
+#about-content #devThree {
+	background: #bbbbbb url(../img/devThree.jpg) no-repeat center;
+	background-size: cover;
+}
+#about-content .bio {
+	width: 64%;
+}
+#about-content .bio h2 {
+	font-size: 20px;
+}
+/* Contact */
+#about-contact {
+	background: #bbbbbb url(../img/office-overview.jpg) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 25px;
+}
+#about-contact address,
+#about-contact section {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 40%;
 }
